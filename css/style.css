@@ -1,0 +1,112 @@
+/* start Global Rules */
+:root {
+    --main-color: #C4F82A;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #141414;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* end Global Rules */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.header .box {
+    padding: 15px;
+    background-color: #1F1F1F;
+    box-shadow: 0 2px 10px rgba(0 0 0 / 0.1);
+    border-radius: 6px;
+    text-align: center;
+    background-image: url(..);
+    
+}
+.header .box img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.header .box h3 ,
+.header .box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    color: white;
+    font-family: sans-serif;
+}
+.header .box p {
+    margin-bottom: 20px;
+}
+.header .box  p:first-of-type {
+    color: var(--main-color);
+    font-size: 13px;
+}
+.header .box  p:last-of-type {
+    font-size: 10px;
+}
+/* .header .box ul {
+    padding: 30px;
+    margin: -50px;
+} */
+.header .box ul li {
+    position: relative;
+    color: white;
+    width: 200px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #333333;
+}
+.header .box ul li a {
+    color: white;
+}
+.header .box ul li:hover {
+    background-color: var(--main-color);
+}
